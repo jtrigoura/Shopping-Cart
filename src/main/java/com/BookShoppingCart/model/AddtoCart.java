@@ -1,12 +1,6 @@
 package com.BookShoppingCart.model;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.FetchType;
-import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.OneToOne;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
@@ -15,6 +9,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 @Table(name = "add_to_cart")
 public class AddtoCart {
 	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	long id;
 	@JsonIgnore
 	@OneToOne(fetch=FetchType.LAZY)

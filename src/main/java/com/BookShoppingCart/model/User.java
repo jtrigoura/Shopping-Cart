@@ -1,14 +1,14 @@
 package com.BookShoppingCart.model;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
 @Table(name = "users")
-// class User tham chiếu với database
+// class User
 public class User {
+
 	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	long id;
 	String name, email, password, created_at, login_token, type, address, is_email_verified, mobile;
 

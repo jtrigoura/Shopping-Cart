@@ -9,7 +9,7 @@ import org.springframework.stereotype.Repository;
 
 import com.BookShoppingCart.model.User;
 @Repository
-//UserRepository kế thừa JpaRepository để truy xuất thông tin từ database
+//UserRepository
 public interface UserRepository extends JpaRepository<User, Long> {
 	@Override
 	Page<User> findAll(Pageable pageable);

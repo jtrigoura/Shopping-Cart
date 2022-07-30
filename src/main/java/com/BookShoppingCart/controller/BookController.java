@@ -14,14 +14,12 @@ import com.BookShoppingCart.controller.RequestPojo.SearchForm;
 import com.BookShoppingCart.service.ProductService.BookServiceslmpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import com.BookShoppingCart.model.Category;
 import com.BookShoppingCart.model.Books;
 
-import javax.imageio.ImageIO;
 
 @RestController
 @RequestMapping("api/product")

@@ -1,14 +1,13 @@
 package com.BookShoppingCart.model;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 
 @Entity
 @Table(name="products")
 public class Books {
 	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	long id;
 	String name,price,description,quatityavi, added_on,category_id,ratings,favourite,seller;
 

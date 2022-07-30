@@ -8,7 +8,7 @@ import com.BookShoppingCart.model.AddtoCart;
 import com.BookShoppingCart.model.CheckoutCart;
 @Service
 public interface CartService {
-	List<AddtoCart> addCartbyUserIdAndProductId(long productId,long userId,String name,String images,int qty,double price) throws Exception;
+	List<AddtoCart> addCartbyUserIdAndProductId(long productId,long userId,String name,int qty,double price) throws Exception;
 	void updateQtyByCartId(long cartId,int qty,double price) throws Exception;
 	List<AddtoCart> getCartByUserId(long userId);
 	List<AddtoCart> removeCartByUserId(long cartId,long userId);

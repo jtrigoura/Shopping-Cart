@@ -9,7 +9,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.BookShoppingCart.model.User;
 
-//class UserPrincipal  giúp chuyển các thông tin của User thành UserDetails!
+//class UserPrincipal
 public class UserPrincipal  implements UserDetails {
 	   private Long id;
 

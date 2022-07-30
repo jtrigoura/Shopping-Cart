@@ -15,7 +15,6 @@ import com.BookShoppingCart.service.UserServices.UserService;
 
 
 @Service
-//class CustomUserDetailsService tùy chỉnh
 public class CustomUserDetailsService implements UserDetailsService {
 
 	@Autowired
